@@ -1,3 +1,20 @@
 const piece01 = document.querySelector('.pos-1');
-
 piece01.style.order = parseInt(Math.random() * 16) + 1;
+const piece02 = document.querySelector('.pos-1');
+piece02.style.order = parseInt(Math.random() * 16) + 1;
+const piece03 = document.querySelector('.pos-1');
+piece03.style.order = parseInt(Math.random() * 16) + 1;
+const piece04 = document.querySelector('.pos-1');
+piece04.style.order = parseInt(Math.random() * 16) + 1;
+const piece05 = document.querySelector('.pos-1');
+piece05.style.order = parseInt(Math.random() * 16) + 1;
+const piece06 = document.querySelector('.pos-1');
+piece06.style.order = parseInt(Math.random() * 16) + 1;
+const piece07 = document.querySelector('.pos-1');
+piece07.style.order = parseInt(Math.random() * 16) + 1;
+const piece08 = document.querySelector('.pos-1');
+piece08.style.order = parseInt(Math.random() * 16) + 1;
+const piece09 = document.querySelector('.pos-1');
+piece09.style.order = parseInt(Math.random() * 16) + 1;
+const piece10 = document.querySelector('.pos-1');
+piece010.style.order = parseInt(Math.random() * 16) + 1;

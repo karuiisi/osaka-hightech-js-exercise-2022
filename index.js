@@ -99,8 +99,7 @@ function pieceClickHandler(event) {
   }
 //クリアメッセージの表示 alert関数を用いる
 if(isFinished(positions)==true){
-  window.alert("手数"+count+"congratulation");
-  window.alert("Reset");
+  window.alert("手数"+count+"congratulation"+"もう1回やる？");
   document.location.reload();
  }
 }

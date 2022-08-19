@@ -13,6 +13,16 @@ let positions = [
   15, 14, 12, 16,
 ];
 
+//シャッフル関数
+function randomizePositions(array){
+  for(var i =(array.length - 1);0<i;i--){
+    var r = Math.floor(Math.random()*(i+1));
+    var tmp = array[i];
+    array[i]=array[r];
+    array[r]=tmp;
+  }
+  return array;
+}
 
 // 空白ピースを基準に、上下左右のピースの場所を調べる関数
 // ----------------------------------------------------------------------------

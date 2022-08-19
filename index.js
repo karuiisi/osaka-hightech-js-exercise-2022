@@ -54,6 +54,7 @@ function component() {
 
     piece.style.order = positions[n];
   }
+  document.getElementByld('count').innerHTML="現在の移動回数"+count;
 }
 
 
@@ -63,17 +64,7 @@ randomizePositions(positions);
 component();
 calcAdjacentPositions();
 
-//順番になっていることを確認する関数を実装する
-function isFinished(array){
-  for(var i = 0;(array.length -1)>i;i++){
-    if(i+1!=array[i]){
-      return false;
-    }
-    if(array[i]==(array.length -1)){
-      return true
-    }
-  }
-}
+
 
 // ピースがクリックされたときに実行する処理 (関数)
 // ----------------------------------------------------------------------------

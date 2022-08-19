@@ -13,7 +13,7 @@ let positions = [
   15, 14, 12, 16,
 ];
 
-//シャッフル関数
+//シャッフル機能の実装
 function randomizePositions(array){
   for(var i =(array.length - 1);0<i;i--){
     var r = Math.floor(Math.random()*(i+1));
@@ -59,9 +59,21 @@ function component() {
 
 // 初期化処理
 // ----------------------------------------------------------------------------
+randomizePositions(positions);
 component();
 calcAdjacentPositions();
 
+//順番になっていることを確認する関数を実装する
+function isFinished(array){
+  for(var i = 0;(array.length -1)>i;i++){
+    if(i+1!=array[i]){
+      return false;
+    }
+    if(array[i]==(array.length -1)){
+      return true
+    }
+  }
+}
 
 // ピースがクリックされたときに実行する処理 (関数)
 // ----------------------------------------------------------------------------

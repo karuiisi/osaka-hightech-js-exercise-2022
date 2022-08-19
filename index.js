@@ -54,6 +54,7 @@ function component() {
 
     piece.style.order = positions[n];
   }
+  document.getElementByld('count').innerHTML="現在の移動回数"+count;
 }
 
 

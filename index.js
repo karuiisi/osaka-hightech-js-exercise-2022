@@ -84,8 +84,12 @@ function pieceClickHandler(event) {
     // 隣接するピースを再計算する
     calcAdjacentPositions(); 
   }
+//アラート表示
+if(isFinished(positions)==true){
+  window.alert("Reset")
+  document.location.reload();
+ }
 }
-
 
 // 1 ～ 15 番ピースのクリックを監視し、クリックされたら pieceClickHandler を呼ぶ
 // ----------------------------------------------------------------------------

@@ -91,14 +91,16 @@ function pieceClickHandler(event) {
     [ positions[15], positions[N - 1] ] = [ positions[N - 1], positions[15] ];
 
     // State => View の反映を行う
+    count++;
     component();
 
     // 隣接するピースを再計算する
     calcAdjacentPositions(); 
   }
-//アラート表示
+//クリアメッセージの表示 alert関数を用いる
 if(isFinished(positions)==true){
-  window.alert("Reset")
+  window.alert("手数"+count+"congratulation");
+  window.alert("Reset");
   document.location.reload();
  }
 }

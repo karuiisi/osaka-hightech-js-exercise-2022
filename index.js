@@ -46,7 +46,8 @@ function component() {
     const piece = document.querySelector('.piece-' + (n + 1));
     piece.style.order = positions[n];
   }
-  //document.getElementById('count').innerHTML = "現在の移動回数"+count ;
+  var firstP = document.getElementById("firstParagraph");
+  document.getElementById('count').innerHTML = "現在の移動回数"+count ;
 }
 // 初期化処理
 // ----------------------------------------------------------------------------

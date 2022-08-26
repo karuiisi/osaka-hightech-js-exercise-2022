@@ -95,3 +95,4 @@ function pieceClickHandler(event) {
 for (let n = 1; n <= 15; n = n + 1) {
   const piece = document.querySelector('.piece-' + n);
   piece.addEventListener('click', pieceClickHandler);
+}

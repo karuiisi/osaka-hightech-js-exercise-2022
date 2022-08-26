@@ -12,7 +12,7 @@ let positions = [
    9, 13, 11,  8,
   15, 14, 12, 16,
 ];
-//シャッフル関数
+//シャッフル機能実装
 function randomizePositions(array){
   for(var i = (array.length - 1); 0 < i; i--){
     var r = Math.floor(Math.random() * (i + 1));
@@ -83,10 +83,10 @@ function pieceClickHandler(event) {
     // 隣接するピースを再計算する
     calcAdjacentPositions();
   }
-  //クリアした時に，アラートを表示（OKを押すとリロード）
+  //クリア演出
   if(isFinished(positions)==true){
-    window.alert("手数"+count+"congratulation");
-    window.alert("Reset");
+    window.alert("手数"+count+"おめでとう！");
+    window.alert("もう一回やる？");
     document.location.reload();
   }
 }
